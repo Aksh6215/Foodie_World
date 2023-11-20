@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result portal | result.com</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+
+<body>
+    <section id="login">
+        <h2 class="primary center">Welcome to our result page, <button class="center" id="loginform"
+                onclick="hide()">Login</button> please!</h2>
+        <div id="details">
+            <form action="">
+                <div class="form-details center">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" placeholder="Enter your name" required />
+                </div>
+
+                <div class="form-details center">
+                    <label for="number">Roll no: </label>
+                    <input type="number" name="roll no" placeholder="Enter your roll no" required />
+                </div>
+
+                <div class="form-details center">
+                    <label for="name">Mother's Name: </label>
+                    <input type="text" name="name" placeholder="Enter your mother's name" required />
+                </div>
+            </form>
+            <button class="btn center"><a href="./practice_web.html">Get Result</a></button>
+        </div>
+
+    </section>
+    <footer class="center">This is a copyright &copy; 2023 www.result.com</footer>
+</body>
+<script>
+    // alert("Please fill all the details of the form");
+
+    // let name = prompt("What is your name?","Guest");
+    // console.log(name);
+
+    // let deleteComment = confirm("Do you really want to delete your comment?");
+    // if(deleteComment){
+    //     console.log("Your comment has been deleted successfully.");
+    // }
+    // else{
+    //     console.log("Your comment has not been deleted.");
+    // }
+
+    function hide() {
+        let loginform = document.getElementById('loginform');
+        let details = document.getElementById('details');
+       if(details.style.display != 'none'){
+        details.style.display = 'none';
+       }
+       else{
+        details.style.display = 'block';
+       }
+    }
+</script>
+
+</html>
